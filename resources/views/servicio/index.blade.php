@@ -59,8 +59,8 @@
                             </thead>
                             @foreach($detalleServicios as $servicio)
                             <tr>
-                                <td>{{$servicio->Parqueadero->nombre}}</td>
-                                <td>{{$servicio->NroFactura}}</td>
+                                <td>{{$servicio->idParqueadero}}</td>
+                                <td>{{$servicio->nroFactura}}</td>
                                 <td>{{$servicio->Vehiculo->placa}}</td>
                                 <td>{{$servicio->fechaIngreso}}</td>
                                 <td>{{$servicio->horaIngreso}}</td>

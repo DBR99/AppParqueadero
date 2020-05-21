@@ -46,7 +46,11 @@ class DetalleServicioController extends Controller
     {
         $request->validate([
             'nroFactura' => 'required',
-
+            'idParqueadero' => 'required',
+            'idVehiculo' => 'required',
+            'idConductor' => 'required',
+            'fechaIngreso' => 'required',
+            'horaIngreso' => 'required',
             ]);
 
        App\DetalleServicio::create($request->all());
@@ -77,6 +81,9 @@ class DetalleServicioController extends Controller
      */
     public function edit($id)
     {
+        $tiposVehiculo = App\TipoVehiculo::orderby('nombre','asc')->get();
+        $parqueaderos = App\Parqueadero::orderby('id','asc')->get();
+        $conductores = App\Conductor::orderby('nombre','asc')->get();
         $detalleServicio = App\DetalleServicio::findorfail($id);
         return view('servicio.edit', compact('detalleServicio'));
     }

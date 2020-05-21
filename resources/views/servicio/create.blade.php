@@ -56,18 +56,18 @@
                                 </select>
                             </div>
                         </div>
-                        <!--<div class="row">
+                        <div class="row">
                             <label class="col-sm-2 col-form-label">{{ __('Fecha de ingreso') }}</label>
                             <div class="col-sm-7">
-                                <input type="date" class="form-control" name='fechaIngreso?' value="{{old('fechaIngreso', $now->format('Y-m-d'))}}" disabled>
+                                <input type="date" class="form-control" name='fechaIngreso' value="{{old('fechaIngreso', $now->format('Y-m-d'))}}" disabled>
                             </div>
                         </div>
                         <div class="row">
                             <label class="col-sm-2 col-form-label">{{ __('Hora de ingreso') }}</label>
                             <div class="col-sm-7">
-                                <input type="time" class="form-control" name='horaIngreso?' value="{{old('horaIngreso', $now->format('H:i'))}}" disabled>
+                                <input type="time" class="form-control" name='horaIngreso' value="{{old('horaIngreso', $now->format('H:i'))}}" disabled>
                             </div>
-                        </div>-->
+                        </div>
 
 
                     </div>
