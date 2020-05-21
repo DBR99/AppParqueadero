@@ -17,9 +17,9 @@ class CreateDetalleServiciosTable extends Migration
             $table->bigIncrements('id');
             $table->string('nroFactura');
             $table->date('fechaIngreso');
-            $table->date('horaIngreso');
+            $table->time('horaIngreso');
             $table->date('fechaSalida');
-            $table->date('horaSalida');
+            $table->time('horaSalida');
             $table->date('valor');
             $table->bigInteger('idParqueadero')->unsigned();
             $table->foreign('idParqueadero')->references('id')->on('parqueaderos');
